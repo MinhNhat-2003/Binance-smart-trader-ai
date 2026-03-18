@@ -3,38 +3,44 @@ def run_agent(user_input):
 
     if "btc" in q:
         return """
-BTC Analysis:
+📊 BTC Analysis
 
-- Market trend: Volatile
-- Risk level: Medium
-- Suggestion: Consider DCA strategy instead of all-in.
+Market trend: Volatile  
+Risk level: Medium  
+
+💡 Insight:
+BTC often reacts strongly to macro news. Consider using DCA instead of going all-in to reduce risk.
 """
 
     if "eth" in q:
         return """
-ETH Analysis:
+📊 ETH Analysis
 
-- Market trend: Growing ecosystem
-- Risk level: Medium
-- Suggestion: Good for long-term holding.
+Market trend: Expanding ecosystem  
+Risk level: Medium  
+
+💡 Insight:
+ETH benefits from DeFi and L2 growth. Suitable for long-term positioning.
 """
 
     if "portfolio" in q:
         return """
-Portfolio Advice:
+📊 Portfolio Strategy
 
-- Avoid putting 100% into one asset
-- Consider diversification (BTC, ETH, stablecoins)
-- Manage risk carefully
+💡 Key ideas:
+- Diversify across BTC, ETH, and stablecoins  
+- Avoid overexposure to a single asset  
+- Rebalance periodically  
 """
 
     if "trade" in q:
         return """
-Trading Tips:
+📊 Trading Tips
 
-- Always use stop-loss
-- Follow trend, don't fight it
-- Avoid emotional trading
+💡 Rules:
+- Always set stop-loss  
+- Trade with the trend  
+- Avoid emotional decisions  
 """
 
     return "Ask me about BTC, ETH, portfolio, or trading strategies."
