@@ -1,4 +1,4 @@
-from openclaw import Agent
+from openclaw.agent import Agent
 from tools import analyze_portfolio, trade_strategy
 
 agent = Agent(
