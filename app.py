@@ -1,5 +1,10 @@
 import streamlit as st
+from agent import run_agent
 
-st.title("Test App")
+st.title("Smart Trader AI")
 
-st.write("If you see this, app is working!")
+user_input = st.text_input("Ask about crypto or trading:")
+
+if user_input:
+    result = run_agent(user_input)
+    st.write(result)
