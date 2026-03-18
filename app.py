@@ -1,10 +1,14 @@
 import streamlit as st
 from agent import run_agent
 
+st.set_page_config(page_title="Smart Trader AI", page_icon="📈")
+
 st.title("📊 Binance Smart Trader AI")
 
-question = st.text_input("Ask about your portfolio or trades:")
+st.write("Your AI assistant for crypto trading insights.")
 
-if question:
-    response = run_agent(question)
-    st.write(response)
+user_input = st.text_input("Enter your question:")
+
+if user_input:
+    response = run_agent(user_input)
+    st.success(response)
